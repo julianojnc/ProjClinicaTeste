@@ -5,11 +5,13 @@ import PageHome from 'paginas/Home';
 import PageServicos from 'paginas/Servicos';
 import PageSobre from 'paginas/Sobre';
 import PageContatos from 'paginas/Contatos';
+import ScrollToTop from 'componentes/ScrollToTop';
 
 function RoutersApp() {
   return (
 
     <BrowserRouter>
+    <ScrollToTop />
       
       <Header />
 
