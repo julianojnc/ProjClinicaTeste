@@ -1,0 +1,77 @@
+/* css banner acaba aqui */
+
+.clinic-info {
+    margin-top: 3rem;
+    display: grid;
+    width: 100%;
+    gap: 3rem;
+    padding: 150px 100px 100px;
+}
+
+.clinic-info .clinic-info_description {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.clinic-info .clinic-info_description .desc_img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* ... */
+}
+
+/* .clinic-info .clinic-info_description .desc_img .detail-1 {
+    height: 25px;
+    background-color: #0A486B;
+    max-width: 60%;
+    margin-right: auto;
+}
+
+.clinic-info .clinic-info_description .desc_img .detail-2 {
+    height: 25px;
+    background-color: #0A486B;
+    max-width: 60%;
+    margin-left: auto;
+
+} */
+
+.clinic-info .clinic-info_description .desc_img img {
+    width: 95%;
+    box-shadow: -90px -25px #0A486B;
+    
+}
+
+.clinic-info .clinic-info_description .clinic-info_desc_txt {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: left;
+    padding: 2px 20px;
+}
+
+.clinic-info .clinic-info_description .clinic-info_desc_txt h3 {
+    font-size: xx-large;
+    font-weight: 700;
+    color: #033049;
+}
+
+.clinic-info .clinic-info_description .clinic-info_desc_txt p {
+    font-weight: 300;
+    color: gray;
+}
+
+.clinic-info_description hr{
+    border: none;
+    height: 1px;
+    background: linear-gradient(0.25turn, #fff 0%, #e9fdf6 25%, #abf7dc 75%, #69B99D 100%);
+}
+#flex-column-reverse{
+    background-color: #F6FCFF;
+}
+#hr-unique{
+    background: linear-gradient(0.25turn, #69B99D 0%, #abf7dc 25%, #e9fdf6 75%, #fff 100%);
+}
+
+/* css imagens e textos terminam aqui */

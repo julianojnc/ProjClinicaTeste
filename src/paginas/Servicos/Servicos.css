@@ -1,0 +1,38 @@
+/* Page Services */
+.services {  
+  display: grid;
+  place-items: center;
+  padding: 150px 100px 100px;
+}
+
+/* Info Services */
+.infoservices {
+  color: var(--Dark);
+  display: grid;
+  place-items: center;
+  width: 60%;
+  padding-top: 69px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.infoservices h1 {
+  font-size: 36px;
+}
+
+.infoservices p {
+  font-family: DM Sans;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 523px;
+  height: 69px;
+  padding-bottom: 64px;
+}
+
+/* All Card */
+.sevicescards {
+  padding-bottom: 160px;
+}
