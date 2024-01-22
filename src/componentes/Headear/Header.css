@@ -166,7 +166,7 @@ a {
 
   .navbar a {
     display: block;
-    margin: 12px 0;
+    margin: 15px 0;
     padding: 0px 25px;
     transition: all 0.5s ease;
   }
@@ -182,7 +182,6 @@ a {
 
   .navbar.open {
     right: 2%;
-    height: 260px;
   }
 }
 
