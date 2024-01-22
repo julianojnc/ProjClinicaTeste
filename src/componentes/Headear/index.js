@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 
 const Header = () => {
-
+    // Esconder o Header quando scroll to down ou aparecer quando Scroll to top
     const [position, setPosition] = useState(window.pageYOffset)
     const [visible, setVisible] = useState(true)
     useEffect(() => {
@@ -18,16 +18,23 @@ const Header = () => {
             window.removeEventListener("scroll", handleScroll);
         })
     })
-
     const bar = visible ? "visible" : "hidden";
 
+    // Menu responsivo
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen((open) => !open)
+    }
+
+    // Header
     return (
         <>
             <header className={bar}>
                 <div className="bar-header">
                     <Link to="/" className="logo"><i className="ri-home-heart-fill"></i><span>Clínica</span></Link>
 
-                    <ul className="navbar" id="navbar">
+                    <ul className={`navbar ${menuOpen ? "open" : ""}`} id="navbar">
                         <li><Link to="/" className="active">Home</Link></li>
                         <li><Link to="/sobre">Sobre</Link></li>
                         <li><Link to="/servicos">Serviços</Link></li>
@@ -35,7 +42,11 @@ const Header = () => {
                     </ul>
 
                     <div className="main">
-                        <div className="bx bx-menu" id="menu-icon"></div>
+                        <div 
+                            className="bx bx-menu" 
+                            id="menu-icon"
+                            onClick={toggleMenu}>
+                        </div>
                     </div>
                 </div>
 
