@@ -21,6 +21,12 @@ const Header = () => {
 
     const bar = visible ? "visible" : "hidden";
 
+    const [mostrarMenu, setMostrarMenu] = useState();
+
+    const toggleMenu = () => {
+        setMostrarMenu(!mostrarMenu);
+    };
+
     return (
         <>
             <header className={bar}>
@@ -34,8 +40,8 @@ const Header = () => {
                         <li><Link to="/contatos">Contatos</Link></li>
                     </ul>
 
-                    <div className="main">
-                        <div className="bx bx-menu" id="menu-icon"></div>
+                    <div onClick={toggleMenu} className="main">
+                    {mostrarMenu && (<div className="bx bx-menu" id="menu-icon"></div>)}
                     </div>
                 </div>
 
