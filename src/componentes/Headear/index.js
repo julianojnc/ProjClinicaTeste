@@ -1,6 +1,7 @@
 import "./Header.css"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
+import MenuLink from "componentes/MenuLink";
 
 const Header = () => {
     // Esconder o Header quando scroll to down ou aparecer quando Scroll to top
@@ -35,15 +36,15 @@ const Header = () => {
                     <Link to="/" className="logo"><i className="ri-home-heart-fill"></i><span>Clínica</span></Link>
 
                     <ul className={`navbar ${menuOpen ? "open" : ""}`} id="navbar">
-                        <li><Link to="/" className="active">Home</Link></li>
-                        <li><Link to="/sobre">Sobre</Link></li>
-                        <li><Link to="/servicos">Serviços</Link></li>
-                        <li><Link to="/contatos">Contatos</Link></li>
+                        <MenuLink to='/'>Home</MenuLink>
+                        <MenuLink to='/sobre'>Sobre</MenuLink>
+                        <MenuLink to='/servicos'>Serviços</MenuLink>
+                        <MenuLink to='/contatos'>Contatos</MenuLink>                        
                     </ul>
 
                     <div className="main">
-                        <div 
-                            className="bx bx-menu" 
+                        <div
+                            className="bx bx-menu"
                             id="menu-icon"
                             onClick={toggleMenu}>
                         </div>
@@ -53,13 +54,13 @@ const Header = () => {
                 <div className="subnavbar" id="subnavbar">
                     <ul className="menusubnavbar">
                         <li>
-                            <a href="{#}"><i className="bx bxs-phone"></i>(27)99999-9999</a>
+                            <Link to=""><i className="bx bxs-phone"></i>(27)99999-9999</Link>
                         </li>
                         <li>
-                            <a href="{#}"><i className="ri-whatsapp-fill"></i> Whatsapp</a>
+                            <Link to="https://wa.me/5527999898280?text=Solicito+Atendimento+para+CNPJ"><i className="ri-whatsapp-fill"></i> Whatsapp</Link>
                         </li>
                         <li id="openPopUpMap">
-                            <a href="{#}"><i className="bx bxs-map"></i>Como Chegar</a>
+                            <Link ><i className="bx bxs-map"></i>Como Chegar</Link>
                         </li>
                     </ul>
                 </div>
