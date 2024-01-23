@@ -15,7 +15,7 @@
   color: var(--main-color);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1090px) {
   .linkDestacado {
     text-decoration: none;
     color: var(--sec-bg-color);
