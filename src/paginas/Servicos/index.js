@@ -1,5 +1,7 @@
 import Card from "componentes/Card";
-import CardIcon from "componentes/CardIcon";
+import CardIcon from "componentes/IconCirurgia";
+import IconExames from "componentes/IconExames";
+import IconVacina from "componentes/IconVacina";
 import "./Servicos.css";
 
 const PageServicos = () => {    
@@ -40,9 +42,9 @@ const PageServicos = () => {
             <ul className="sevicescards">
                 <Card cardicon={<CardIcon />} itens={subCirurgias} titulo="Cirurgias" descricao="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Odit deserunt illo quis illum?"/>
-                <Card itens={subVacinas} titulo="Vacinas" descricao="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <Card cardicon={<IconVacina />} itens={subVacinas} titulo="Vacinas" descricao="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Odit deserunt illo quis illum?"/>
-                <Card itens={subExames} titulo="Exames" descricao="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <Card cardicon={<IconExames />} itens={subExames} titulo="Exames" descricao="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Odit deserunt illo quis illum?"/>
             </ul>
         </section>

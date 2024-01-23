@@ -34,22 +34,6 @@
     transition: all 0.5s ease;
   }
 
-  .infocardsicon {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-  }
-
-  #plus {
-    position: absolute;
-    top: -60px;
-    left: 70px;
-  }
-
   /* Title Card */
   .infocardstitle {
     font-size: 24px;
@@ -82,8 +66,7 @@
     transition: all 0.5s ease;
   }
 
-  #btn:hover,
-  .infocardsicon:hover {
+  #btn:hover {
     transition: all 0.5s ease;
     transform: scale(1.2);
   }
