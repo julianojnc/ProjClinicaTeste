@@ -85,7 +85,6 @@
     flex-direction: column;
     color: var(--text-color-secon);
     text-align: center;
-    
     overflow: hidden;
     transition: all 0.5s;
     transform: translateY(30);
