@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 523px;
+  
   height: 69px;
   padding-bottom: 64px;
 }
@@ -35,4 +35,27 @@
 /* All Card */
 .sevicescards {
   padding-bottom: 160px;
+}
+
+@media (max-width: 580px) {
+
+  .services {
+    display: grid;
+    place-items: center;
+    padding: 100px 0 20px 0 ;
+  }
+  
+  .infoservices{
+    width: 100%;
+  }
+
+  .infoservices p {
+    text-align: center;
+    width: 90%;    
+    padding-bottom: 70px;
+  }
+
+  .sevicescards {
+  display: grid;
+  }
 }
