@@ -6,11 +6,11 @@
     background-size: cover;
     background-position: center;
     display: flex;
+
 }
 
 .banner .description {
     align-self: flex-end;
-    /* margin: auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,10 +30,12 @@
     font-weight: 600;
     font-size: larger;
     text-shadow: 0px 3px #698990;
+
 }
 
 .banner .description .desc_txt {
     font-size: medium;
+
 }
 
 .banner .description button {
@@ -48,4 +50,12 @@
 
 .banner .description button:hover {
     background-color: #5dabbe;
+}
+
+
+
+@media (min-width: 1090px) {
+    .banner {
+        height: 85vh;
+    }
 }

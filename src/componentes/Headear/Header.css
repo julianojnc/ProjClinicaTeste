@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* NavBar */
 header {
   position: fixed;
@@ -76,7 +81,7 @@ header .bar-header {
 
 /* SubNavBar */
 .subnavbar {
-  position: fixed;
+  position: absolute;
   background: var(--main-color);
   margin: 70px 0px 0px 0px;
   width: 100%;
@@ -174,5 +179,25 @@ a {
 
   .menusubnavbar li {
     width: 150px;
+  }
+}
+
+@media (max-width: 383px) {
+  .menusubnavbar a {
+    font-size: 0.6rem;
+  }
+
+  .menusubnavbar i {
+    font-size: 0.7rem;
+  }
+
+  .menusubnavbar li {
+    width: 150px;
+  }
+}
+
+@media (max-width: 308px) {
+  .menusubnavbar a {
+    font-size: 0.5rem;
   }
 }
