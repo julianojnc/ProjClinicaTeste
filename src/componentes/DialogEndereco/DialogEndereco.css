@@ -1,0 +1,317 @@
+/* PopUpMap */
+/* Overlay */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PopUp Body */
+.dialog {
+    border: none;
+    background: var(--sec-bg-color);
+    color: var(--text-color-secon);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    transition: all 0.5s ease;
+    width: 70%;
+    height: 600px;
+    padding: 16px;
+    margin: auto;
+}
+
+.dialog .dialog-header{
+    display: flex;
+}
+
+.dialog-header .dialog-titulo{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: start;
+    align-items: center;
+}
+
+.dialog-titulo h1 {
+    font-size: 2.18rem;
+    transition: all 0.5s ease;
+}
+
+.dialog-header .close{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: end;
+    align-items: center;
+}
+
+.layoutdialog {
+    display: flex;
+    height: 90%;
+    column-count: 2;
+    transition: all 0.5s ease;
+}
+
+/* Article Text */
+.infodialog {
+    width: 50%;
+    height: 100%;
+}
+
+.infodialogend {
+    padding-left: 25px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.infodialogend li {
+    font-size: 1.56rem;
+    padding-top: 35px;
+    transition: all 0.5s ease;
+}
+
+/* Article Map */
+.mapdialog {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+/* Article Iframe */
+.dialogiframe {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    place-items: center;
+}
+
+.dialogiframe iframe {
+    width: 90%;
+    height: 93%;
+}
+
+/* Buttons WazerGoogle */
+.mapdialog .dialogbutton {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.dialogbutton .dialogbuttonmap {    
+    display: flex;
+    justify-content: space-around;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.dialogbuttonmap li {
+    display: grid;
+    place-items: center;
+    background: var(--main-color);
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 45px;
+    transition: all 0.5s ease;
+}
+
+.dialogbuttonmap i,
+iconify-icon {
+    font-size: 1.56rem;
+}
+
+.dialogbuttonmap a {
+    color: var(--text-color-secon);
+    font-size: 1.56rem;
+}
+
+/* Button Close */
+.close-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background: var(--main-color);
+    color: var(--text-color-secon);
+    font-size: 2.18rem;
+    font-weight: 600;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 1090px) {
+     /* Header Dialog*/
+     .dialog {
+        width: 70%;
+        height: 650px;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .dialog .dialog-header{
+        height: 40px;
+        gap: 0px;
+    }
+
+    .dialog-header .close{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .close{
+        width: 30%;
+        display: flex;
+        flex-direction: end;
+        align-items: center;
+    }
+
+    .dialog-header .dialog-titulo{
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: start;
+       align-items: center;
+    }
+
+    .dialog-titulo h1 {
+        font-size: 2.18rem;
+        height: auto;
+    }
+
+    .close-btn{
+        height: 40px;
+        width: 40px;
+        font-size: 2.18rem;
+    }
+
+    /* Main Dialog*/
+    .layoutdialog {
+        display: grid;
+    }
+
+    .infodialog{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infodialog .infodialogend{
+        width: 100%;
+        padding-left: 25px;
+        margin: 0;
+    }
+
+    .infodialog .infodialogend li{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .dialogbutton .dialogbuttonmap{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .infodialogend {
+        padding-left: 0;
+    }
+
+    .infodialogend li {
+        font-size: 1.25rem;
+    }
+
+    .mapdialog iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mapdialog .dialogbutton {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 580px) {
+
+    /* Header Dialog*/
+    .dialog {
+        width: 90%;
+        height: 500px;
+        padding: 5px;
+    }
+
+    .dialog-header .close{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .close{
+        width: 30%;
+        display: flex;
+        flex-direction: end;
+        align-items: center;
+    }
+
+    .dialog-header .dialog-titulo{
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: start;
+       align-items: center;
+    }
+
+    .dialog-titulo h1 {
+        font-size: 1.35rem;
+        height: auto;
+    }
+
+    .close-btn{
+        height: 30px;
+        width: 30px;
+        font-size: 1.82rem;
+    }
+
+    /* Main Dialog*/
+    .infodialog .infodialogend{
+        padding: 0% 10%;
+    }
+
+    .infodialog .infodialogend li{
+        padding-top: 10px;
+        margin: 0;
+        width: 100%;
+        font-size: 1.10rem;
+    }
+
+    .dialogbutton .dialogbuttonmap{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .dialogbuttonmap li {
+        width: 100px;
+        height: 35px;
+    }
+
+    .dialogbuttonmap i,
+    iconify-icon {
+        font-size: 1.36rem;
+    }
+
+    .dialogbuttonmap a {
+        font-size: 1.15rem;
+    }
+}

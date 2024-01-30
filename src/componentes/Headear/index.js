@@ -2,8 +2,9 @@ import "./Header.css"
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 import MenuLink from "componentes/MenuLink";
+import DialogEndereco from "componentes/DialogEndereco";
 
-const Header = () => {
+const Header = ({ urlIframe, urlWazer, urlGoogle }) => {
     // Esconder o Header quando scroll to down ou aparecer quando Scroll to top
     const [position, setPosition] = useState(window.pageYOffset)
     const [visible, setVisible] = useState(true)
@@ -28,6 +29,13 @@ const Header = () => {
         setMenuOpen((open) => !open)
     }
 
+    // Modal Open
+    const [modalOpen, setModalOpen] = useState(false)
+
+    const closeModal = () => {
+        setModalOpen(false)
+    }
+
     // Header
     return (
         <>
@@ -39,7 +47,7 @@ const Header = () => {
                         <MenuLink to='/'>Home</MenuLink>
                         <MenuLink to='/sobre'>Sobre</MenuLink>
                         <MenuLink to='/servicos'>Serviços</MenuLink>
-                        <MenuLink to='/contatos'>Contatos</MenuLink>                        
+                        <MenuLink to='/contatos'>Contatos</MenuLink>
                     </ul>
 
                     <div className="main">
@@ -60,11 +68,15 @@ const Header = () => {
                             <Link to="https://wa.me/5527999898280?text=Solicito+Atendimento+para+CNPJ"><i className="ri-whatsapp-fill"></i> Whatsapp</Link>
                         </li>
                         <li id="openPopUpMap">
-                            <Link ><i className="bx bxs-map"></i>Como Chegar</Link>
+                            <Link onClick={() => setModalOpen(true)}><i className="bx bxs-map"></i>Como Chegar</Link>
                         </li>
                     </ul>
                 </div>
             </header>
+
+            {modalOpen && (
+                <DialogEndereco onClose={closeModal} urlIframe={urlIframe} urlWazer={urlWazer} urlGoogle={urlGoogle} />
+            )}
         </>
 
     )
