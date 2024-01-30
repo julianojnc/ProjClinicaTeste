@@ -1,8 +1,9 @@
 .clinic-info {
-    margin-top: 1.5rem;
     display: grid;
-    width: 100%;
     gap: 2rem;
+    width: 1440px;
+    margin: 1.5rem auto;
+    max-width: 100%;
 }
 
 .clinic-info .clinic-info_description {
