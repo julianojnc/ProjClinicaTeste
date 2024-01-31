@@ -1,47 +1,54 @@
-import "./Header.css"
-import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import MenuLink from "componentes/MenuLink";
 import DialogEndereco from "componentes/DialogEndereco";
+import "./Header.css";
 
 const Header = ({ urlIframe, urlWazer, urlGoogle }) => {
+    const [position, setPosition] = useState(window.pageYOffset);
+    const [visible, setVisible] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
+
     // Esconder o Header quando scroll to down ou aparecer quando Scroll to top
-    const [position, setPosition] = useState(window.pageYOffset)
-    const [visible, setVisible] = useState(true)
     useEffect(() => {
         const handleScroll = () => {
-            let moving = window.pageYOffset
-
+            let moving = window.pageYOffset;
             setVisible(position > moving);
-            setPosition(moving)
+            setPosition(moving);
+
+            // Fechar o menu hamburguer quando o header se esconder
+            if (!visible && menuOpen) {
+                setMenuOpen(false);
+            }
         };
+
         window.addEventListener("scroll", handleScroll);
-        return (() => {
+        return () => {
             window.removeEventListener("scroll", handleScroll);
-        })
-    })
+        };
+    }, [menuOpen, position, visible]);
+
     const bar = visible ? "visible" : "hidden";
 
     // Menu responsivo
-    const [menuOpen, setMenuOpen] = useState(false);
-
     const toggleMenu = () => {
-        setMenuOpen((open) => !open)
-    }
+        setMenuOpen(!menuOpen);
+    };
 
     // Modal Open
-    const [modalOpen, setModalOpen] = useState(false)
-
     const closeModal = () => {
-        setModalOpen(false)
-    }
+        setModalOpen(false);
+    };
 
-    // Header
     return (
         <>
             <header className={bar}>
                 <div className="bar-header">
-                    <Link to="/" className="logo"><i className="ri-home-heart-fill"></i><span>Clínica</span></Link>
+                    <Link to="/" className="logo">
+                        <i className="ri-home-heart-fill"></i>
+                        <span>Clínica</span>
+                    </Link>
 
                     <ul className={`navbar ${menuOpen ? "open" : ""}`} id="navbar">
                         <MenuLink to='/'>Home</MenuLink>
@@ -78,8 +85,7 @@ const Header = ({ urlIframe, urlWazer, urlGoogle }) => {
                 <DialogEndereco onClose={closeModal} urlIframe={urlIframe} urlWazer={urlWazer} urlGoogle={urlGoogle} />
             )}
         </>
+    );
+};
 
-    )
-}
-
-export default Header
+export default Header;
