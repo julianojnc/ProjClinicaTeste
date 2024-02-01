@@ -71,12 +71,6 @@
     transform: scale(1.2);
   }
 
-  /* Content Open */
-  #iconbuttoncard.open {
-    transition: all 0.5s ease;
-    transform: rotate(-180deg);
-  }
-
   /* Content/SubCar */
   .contentcard {
     display: flex;
@@ -89,12 +83,6 @@
     transition: all 0.5s;
     transform: translateY(30);
     font-size: 24px;
-  }
-
-  /* Content/SubCard Open */
-  .contentcard.opencard {
-    display: flex;
-    transform: translateY(0);
   }
 
   /* Text SubCard */
