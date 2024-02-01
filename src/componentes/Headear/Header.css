@@ -105,11 +105,18 @@ a {
 }
 
 .menusubnavbar li {
+  display: flex;
+  justify-content: center;
   padding: 3px;
   text-align: center;
   transition: all 0.5s ease;
   width: 250px;
 }
+
+.menusubnavbar li a{
+  width: 100%;
+}
+
 
 .menusubnavbar li:hover {
   background: var(--sec-bg-color);
