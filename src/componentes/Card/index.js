@@ -6,7 +6,7 @@ import "./Card.css";
 const Card = (props) => {
   const tituloCard = `${props.titulo}`;
   const descricaoCard = `${props.descricao}`;
-  const itensSubCard = `${props.itens}`;
+  const itensSubCard = props.itens;
 
   const [mostrarSubcard, setMostrarSubcard] = useState();
 

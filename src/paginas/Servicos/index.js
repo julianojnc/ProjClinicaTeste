@@ -7,28 +7,29 @@ import "./Servicos.css";
 const PageServicos = () => {    
 
     const subCirurgias = [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
+        "Cesariana",
+        "Hérnias",
+        "Cistotomia",
+        "Gastrotomias",
+        "Castração",
     ];
 
     const subVacinas = [
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
+        "V8 ou V10",
+        "Gripe canina",
+        "Giárdia",
+        "Antirrábica",
+        "Leishmaniose",
     ];
 
     const subExames = [
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
+        "Check-up",
+        "Ultrassonografia",
+        "Exame de sangue",
+        "Exames de fezes",
+        "Raio X",
     ];
+
 
     return (
         <section className="services">            
