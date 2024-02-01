@@ -41,12 +41,9 @@ const PageServicos = () => {
                 </p>
             </article>
             <ul className="sevicescards">
-                <Card cardicon={<CardIcon />} itens={subCirurgias} titulo="Cirurgias" descricao="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Odit deserunt illo quis illum?"/>
-                <Card cardicon={<IconVacina />} itens={subVacinas} titulo="Vacinas" descricao="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Odit deserunt illo quis illum?"/>
-                <Card cardicon={<IconExames />} itens={subExames} titulo="Exames" descricao="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Odit deserunt illo quis illum?"/>
+                <Card cardicon={<CardIcon />} itens={subCirurgias} titulo="Cirurgias" descricao="Cirurgias veterinárias especializadas para uma vida mais saudável e feliz"/>
+                <Card cardicon={<IconVacina />} itens={subVacinas} titulo="Vacinas" descricao="Vacinas veterinárias para uma vida longa e cheia de saúde para o seu melhor amigo!"/>
+                <Card cardicon={<IconExames />} itens={subExames} titulo="Exames" descricao="Exames veterinários para cuidar com amor da saúde do seu companheiro peludo!"/>
             </ul>
         </section>
     )
