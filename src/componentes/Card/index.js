@@ -19,7 +19,7 @@ const Card = (props) => {
       <section className="card">
         <section className="cardbox">
           <ul className="infocards">
-            {props.cardicon}
+          <div onClick={toggleSubcard}>{props.cardicon}</div>
             <CardInfo titulo={tituloCard} descricao={descricaoCard} />
             <li onClick={toggleSubcard} className="buttoncard" id="btn" value="cirurgia">
               <i
