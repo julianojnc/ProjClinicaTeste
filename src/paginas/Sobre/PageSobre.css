@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    width: 1440px;
+    margin: 1.5rem auto;
+    max-width: 100%;
+}
+
+.about-container {
+    padding: 100px 50px;
+}
+
+img {
+    width: 100%;
+    z-index: 5555;
+}
+
+.about-container-content{
+    padding: 0px 100px;
+}
+
+.about-container-content h3 {
+    font-size: xx-large;
+    font-weight: 700;
+    color: var(--Dark);
+    padding: 25px 15px;
+}
+
+.about-container-content p{
+    font-size: 24px;
+    color: var(--Gray);
+}
+
+.about-container-content img{
+    padding: 50px 0;
+}

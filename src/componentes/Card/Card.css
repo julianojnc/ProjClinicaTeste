@@ -46,7 +46,7 @@
   /* Desc Card */
   .infocardsdesc {
     position: relative;
-    color: var(--Gray, #767676);
+    color: var(--Gray);
     text-align: center;
     align-self: center;
     margin-top: 12px;
