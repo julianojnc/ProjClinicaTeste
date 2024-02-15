@@ -6,6 +6,7 @@ import PageServicos from 'paginas/Servicos';
 import PageSobre from 'paginas/Sobre';
 import PageContatos from 'paginas/Contatos';
 import ScrollToTop from 'componentes/ScrollToTop';
+import PageNotFound from 'paginas/NotFound';
 
 function RoutersApp() {
 
@@ -25,7 +26,7 @@ function RoutersApp() {
         <Route path='/servicos' element={<PageServicos />}/>
         <Route path='/sobre' element={<PageSobre />}/>
         <Route path='/contatos' element={<PageContatos />}/>
-        <Route path='*'/>
+        <Route path='*' element={<PageNotFound />}/>
       </Routes>
       
       <Footer urlIframe={urlIframe} urlWazer={urlWazer} urlGoogle={urlGoogle} />
