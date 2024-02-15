@@ -7,8 +7,8 @@ const PageNotFound = () => {
         <main>
             <section className="pagenotfound">
                 <div className="pagenotfound-content">
-                    <h1>OOPS! PAGINA NAO ENCONTRADA!</h1>
-                    <p>Erro 404, pagina procurada nao encontrada!</p>
+                    <h1>OOPS! PAGINA NÃO ENCONTRADA!</h1>
+                    <p>Erro 404, pagina procurada não encontrada!</p>
                     <MenuLink to='/'><p>Voltar ao Site</p></MenuLink>
                 </div>
                 <div className="pagenotfound-img">
