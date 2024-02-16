@@ -36,7 +36,7 @@ const PageServicos = () => {
             <article className="infoservices">
                 <h1>Serviços</h1>
                 <p>
-                    Com mais de 10 anos no mercado, a Clinica já conquistou clientes de
+                    Com mais de 10 anos no mercado, Bichinho Solto já conquistou clientes de
                     inúmeros países com seus tratamentos exclusivos e totalmente naturais
                 </p>
             </article>

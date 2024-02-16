@@ -47,7 +47,7 @@ const Header = ({ urlIframe, urlWazer, urlGoogle }) => {
                 <div className="bar-header">
                     <Link to="/" className="logo">
                         <i className="ri-home-heart-fill"></i>
-                        <span>Clínica</span>
+                        <span>Bichinho Solto</span>
                     </Link>
 
                     <ul className={`navbar ${menuOpen ? "open" : ""}`} id="navbar">
