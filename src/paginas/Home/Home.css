@@ -1,0 +1,141 @@
+.clinic-info {
+    display: grid;
+    gap: 2rem;
+    max-width: 100%;
+    margin: 40px 20px 150px 20px;
+}
+
+.clinic-info .clinic-info_description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.clinic-info .clinic-info_description .desc_img, .clinic-info .clinic-info_description .desc_img-in {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.clinic-info .clinic-info_description .desc_img img, .clinic-info .clinic-info_description .desc_img-in img {
+    width: 95%;
+    box-shadow: -90px -25px #0A486B;
+}
+
+h3 {
+    font-size: 2.1875rem;
+    color: #033049;
+}
+
+.clinic-info .clinic-info_description .clinic-info_desc_txt p {
+    font-weight: 300;
+    color: gray;
+}
+
+.clinic-info_description hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(0.25turn, #fff 0%, #e9fdf6 25%, #abf7dc 75%, #69B99D 100%);
+}
+
+#flex-column-reverse {
+    background-color: #F6FCFF;
+}
+
+#hr-unique {
+    background: linear-gradient(0.25turn, #69B99D 0%, #abf7dc 25%, #e9fdf6 75%, #fff 100%);
+}
+
+
+@media (min-width: 1090px) {
+
+    .clinic-info {
+        margin: 40px 50px 150px 50px;
+    }
+
+    .clinic-info .description_content {
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clinic-info .clinic-info_description .desc_img {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 40%;
+    }
+
+    .clinic-info_title{
+        text-align: end;
+    }
+
+    .clinic-info .clinic-info_description .desc_img-in {
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 40%;
+    }
+
+    .clinic-info .clinic-info_description .desc_img-in img {
+        width: 95%;
+        box-shadow: 90px -25px #0A486B;
+    }
+
+    .clinic-info .clinic-info_description .clinic-info_desc_txt {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: .5rem;
+        text-align: left;
+        padding: 2px 20px;
+        width: 50%;
+    }
+
+}
+
+@media (min-width: 580px) {
+    .clinic-info {
+        margin: 40px 100px 150px 100px;
+    }
+
+    .clinic-info .description_content {
+        display: flex;
+        width: 100%;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clinic-info .clinic-info_description .desc_img {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 40%;
+    }
+
+    .clinic-info_title{
+        text-align: end;
+    }
+
+    .clinic-info .clinic-info_description .desc_img-in {
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 40%;
+    }
+
+    .clinic-info .clinic-info_description .desc_img-in img {
+        width: 95%;
+        box-shadow: 90px -25px #0A486B;
+    }
+
+    .clinic-info .clinic-info_description .clinic-info_desc_txt {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: .5rem;
+        text-align: left;
+        padding: 2px 20px;
+        width: 50%;
+    }
+}

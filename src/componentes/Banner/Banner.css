@@ -1,0 +1,60 @@
+.banner {
+    width: 100%;
+    height: 75vh;
+    background-image: url("assets/img/veterinario.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+}
+
+.banner .description {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    font-size: 1.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    color: #fff;
+    text-align: center;
+    gap: 1rem;
+
+}
+
+.banner .description .desc_title {
+    font-weight: 600;
+    font-size: 2.1875rem;
+    text-shadow: 0px 3px #698990;
+
+}
+
+.banner .description .desc_txt {
+    font-size: 1.125rem;
+}
+
+.banner .description button {
+    font-size: large;
+    color: #fff;
+    background-color: #62B6CB;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 15px;
+    cursor: pointer;
+}
+
+.banner .description button:hover {
+    background-color: #5dabbe;
+}
+
+
+
+@media (min-width: 1090px) {
+    .banner {
+        height: 85vh;
+    }
+}
