@@ -41,6 +41,7 @@
 
 .dialog-titulo h1 {
     font-size: 2.18rem;
+    font-weight: 600;
     transition: all 0.5s ease;
 }
 
@@ -73,6 +74,7 @@
 
 .infodialogend li {
     font-size: 1.56rem;
+    font-weight: 300;
     padding-top: 35px;
     transition: all 0.5s ease;
 }

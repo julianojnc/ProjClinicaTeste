@@ -2,7 +2,7 @@
 .services {
   display: grid;
   place-items: center;
-  padding: 150px 100px 100px;
+  margin: 150px 100px 150px 100px;
 }
 
 /* Info Services */
@@ -11,29 +11,20 @@
   display: grid;
   place-items: center;
   width: 60%;
-  padding-top: 69px;
-  padding-bottom: 64px;
   text-align: center;
 }
 
 .infoservices h1 {
+  font-weight: 600;
   font-size: 2.1875rem;
 }
 
 .infoservices p {
-  text-align: center;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 300;
   color: var(--Gray);
   height: 69px;
   padding-bottom: 64px;
-}
-
-/* All Card */
-.sevicescards {
-  padding-bottom: 160px;
 }
 
 @media (max-width: 580px) {
@@ -41,7 +32,7 @@
   .services {
     display: grid;
     place-items: center;
-    padding: 100px 0 20px 0;
+    margin: 150px 20px 150px 20px;
   }
 
   .infoservices {
@@ -51,10 +42,6 @@
   .infoservices p {
     text-align: center;
     width: 90%;
-    padding-bottom: 70px;
-  }
-
-  .sevicescards {
-    display: grid;
+    padding-bottom: 140px;
   }
 }

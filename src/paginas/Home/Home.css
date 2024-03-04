@@ -25,11 +25,13 @@
 
 h3 {
     font-size: 2.1875rem;
+    font-weight: 600;
     color: #033049;
 }
 
 .clinic-info .clinic-info_description .clinic-info_desc_txt p {
     font-weight: 300;
+    font-size: 18px;
     color: gray;
 }
 

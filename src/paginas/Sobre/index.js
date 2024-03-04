@@ -6,7 +6,9 @@ const PageSobre = () => {
     return (
         <main>
             <section className='about-container'>
-                <img src={Clinica} alt='imagem' />
+                <div className='about-container_img'>
+                    <img src={Clinica} alt='imagem' />
+                </div>
 
                 <div className='about-container-content'>
                     <div className='content'>

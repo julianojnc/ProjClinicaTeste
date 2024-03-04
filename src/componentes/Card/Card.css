@@ -1,8 +1,4 @@
   /* All Card */
-  .sevicescards {
-    padding-bottom: 160px;
-  }
-
   .card {
     width: 352px;
     display: flex;
@@ -35,23 +31,20 @@
   }
 
   /* Title Card */
-  .infocardstitle {
-    font-size: 24px;
+  .infocardstitle h1 {
+    font-size: 1.5rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
     color: var(--Dark);
   }
 
   /* Desc Card */
-  .infocardsdesc {
-    position: relative;
+  .infocardsdesc p {
     color: var(--Gray);
-    text-align: center;
-    align-self: center;
+    font-weight: 300;
     margin-top: 12px;
     max-width: 263px;
-    font: 400 16px;
   }
 
   /* Button Open Content*/
@@ -85,10 +78,30 @@
   /* Text SubCard */
   .contentcard ul li {
     padding: 10px;
+    font-weight: 600;
   }
 
   /* All Cards */
   .sevicescards {
     display: flex;
     gap: 50px;
+  }
+
+  @media (max-width: 580px) {
+    .sevicescards {
+      display: grid;
+    }
+
+    .card {
+      width: 352px;
+    }
+
+    .infocardstitle h1 {
+       font-size: 1.5rem;
+    }
+  
+    /* Desc Card */
+    .infocardsdesc p {
+      font-size: 1rem;
+    }
   }
