@@ -27,7 +27,7 @@
     color: var(--bg-color);
     font-size: 1rem;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: var(--font-weight-text);
 }
 
 .timeline__component--bottom {
@@ -67,7 +67,7 @@
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-title);
     color: var(--Dark);
 }
 

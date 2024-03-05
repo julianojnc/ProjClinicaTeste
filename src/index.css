@@ -16,6 +16,11 @@
   --sec-bg-color: #1b4965;
   --Dark: #033049;
   --Gray: #767676;
+  --font-size-title: 2.1875rem;
+  --font-size-text: 1.125rem;
+  --font-size-text-580: 1rem;
+  --font-weight-title: 600;
+  --font-weight-text: 300;
 }
 
 html {

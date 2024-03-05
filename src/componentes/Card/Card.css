@@ -33,16 +33,14 @@
   /* Title Card */
   .infocardstitle h1 {
     font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+    font-weight: var(--font-weight-title);
     color: var(--Dark);
   }
 
   /* Desc Card */
   .infocardsdesc p {
     color: var(--Gray);
-    font-weight: 300;
+    font-weight: var(--font-weight-text);
     margin-top: 12px;
     max-width: 263px;
   }
@@ -78,7 +76,7 @@
   /* Text SubCard */
   .contentcard ul li {
     padding: 10px;
-    font-weight: 600;
+    font-weight: var(--font-weight-title);
   }
 
   /* All Cards */

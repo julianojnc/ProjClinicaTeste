@@ -27,7 +27,7 @@
 }
 
 .container_contatos .contatos_button i{
-    font-size: 1.125rem;
+    font-size: var(--font-size-text);
     margin-right: 5px;
 }
 
@@ -40,16 +40,16 @@
 .container h1,
 h2 {
     width: 100%;
-    font-size: 2.1875rem;
-    font-weight: 600;
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-title);
     color: #033049;
     padding-bottom: 30px;
     transition: all 0.5s ease;
 }
 
 .container p {
-    font-size: 1.125rem;
-    font-weight: 300;
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-text);
     color: #767676;
     transition: all 0.5s ease;
 }
