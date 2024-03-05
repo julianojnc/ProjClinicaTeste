@@ -32,7 +32,7 @@ h3 {
 .clinic-info .clinic-info_description .clinic-info_desc_txt p {
     font-weight: 300;
     font-size: 18px;
-    color: gray;
+    color: var(--Gray);
 }
 
 .clinic-info_description hr {
